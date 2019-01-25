@@ -286,14 +286,14 @@ class App extends Component {
             <header className="header-text"> <h3> Car Parking Details </h3></header>
 
             <BootstrapTable data={this.state.car_details} striped hover version='4'>
-              <TableHeaderColumn filter={{ type: 'TextFilter' }} isKey dataField='car_registration_no'>Car Number</TableHeaderColumn>
+              <TableHeaderColumn filter={{ type: 'TextFilter' }} isKey dataField='car_registration_no'>Registration No.</TableHeaderColumn>
               <TableHeaderColumn dataField='car_color'
                 filterFormatted dataFormat={enumFormatter} formatExtraData={color_type}
                 filter={{ type: 'SelectFilter', options: color_type }}
               >
-                Car Colour
+                Colour
               </TableHeaderColumn>
-              <TableHeaderColumn filter={{ type: 'TextFilter' }} dataField='car_parking_slot'>Parking Slot</TableHeaderColumn>
+              <TableHeaderColumn filter={{ type: 'TextFilter' }} dataField='car_parking_slot'>Slot No.</TableHeaderColumn>
               <TableHeaderColumn dataFormat={this.deallocate_slot_button}>De Allocate</TableHeaderColumn>
             </BootstrapTable>
 
