@@ -1,0 +1,25 @@
+.header-text {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 1fr;
+  grid-auto-rows: 2em;
+  grid-gap: .5em;
+  font-size: 1em;
+  margin: 0% 1%;
+}
+
+.error-label {
+  color: #d61b1b;
+}
+
+th {
+  background-color: #4285F4;
+  color: #fff;
+}
+
+body {
+  font-family: sans-serif
+}
